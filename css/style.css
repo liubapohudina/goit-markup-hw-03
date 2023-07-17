@@ -1,4 +1,4 @@
-.main-page {
+body {
     font-family: var(--primary-font);
     color: var(--primary-color-slate, #434455);
     background-color: var(--background-color-white);
@@ -20,31 +20,54 @@ h1, h2, h3, h4, h5, h6, p {
 	margin-bottom: 0;
 }
 
-ul, ol {
+ul {
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
 }
 img {
     display: block;
+    max-width: 100%;
 }
-.main-page .link {
-    font-family: "Raleway", sans-serif;
-    color: var(--color-logo);
-    font-size: 18px;
-font-weight: 800;
-line-height: 1.17;
-letter-spacing:  0.03em;
-text-transform: uppercase;
-text-decoration: none;
+main {
+    flex-grow: 1;
 }
-.main-page .logo-studio {
-    color: var( --primary-text-color);
+.container{
+    margin: 0 auto;
+    width: 1158px;
+    padding: 0 15px;
+}
 
-}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
+  
+ 
+
 .list{
     list-style: none;
+    align-self: baseline;
+    display: flex;
+    
 }
+ header .container {
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-bottom: 1px solid var(--cornflower, #E7E9FC);
+white-space: nowrap;
+}
+
 .main-page .list .link {
     font-family: var(--primary-font);
     color: var(--primary-text-color);
@@ -55,10 +78,44 @@ font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
 }
+.logo {
+    font-family: "Raleway", sans-serif;
+    color: var(--color-logo);
+    font-size: 18px;
+font-weight: 800;
+line-height: 1.17;
+letter-spacing:  0.03em;
+text-transform: uppercase;
+text-decoration: none;
+flex-basis: 115px;
+height: 24px;
+margin-left: 156px;
+padding: 24px 76px 24px 156px;
+
+
+
+}
+.main-page .logo-studio {
+    color: var( --primary-text-color);
+
+}
+.item .list  {
+    display: inline-flex;
+align-items: flex-start;
+gap: 40px;
+padding: 24px 332px 24px 76px;
+flex-basis: 261px;
+}
+
+
+
 .list .link:focus,
 .list .link:hover {
     color: var(--active-text-color);
     
+}
+.link .mail {
+    margin: 24px 40px ;
 }
 .contacts {
     font-style: normal;
@@ -70,15 +127,18 @@ letter-spacing: 0.02em;
     font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
+align-self: baseline;
 }
 .contacts .list .link:focus,
 .contacts .list .link:hover {
     color: var(--active-text-color);
 }
-.section {
+.section-hero {
     background-color: var(--backgroung-color-onesect);
     text-align: center;
     font-family: "Roboto", sans-serif;
+    height: 600px;
+    padding: 188px 472px;
 }
 .page-title {
     font-family: "Roboto", sans-serif;
@@ -87,8 +147,12 @@ letter-spacing: 0.02em;
     line-height: 1.07;
     color: var(--color-text-onesect);
     text-align: center;
+    width: calc(1440px - 944px);
+    margin-bottom: 40px;
+    
+
 }
-.section .button {
+.section-hero .button {
     color:#FFF;
     cursor: pointer;
 background: var(--color-logo);
@@ -97,11 +161,21 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.04em;
+margin: 0 auto;
+display: block;
+padding: 16px 32px;
+border-radius: 4px;
+background: var(--color-logo);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.section .button:hover,
-.section .button:focus {
+.section-hero .button:hover,
+.section-hero .button:focus {
     color: var(--background-color-white);
     background-color: var(--active-text-color);
+}
+.section-offer .container {
+    display: flex;
+    padding: 120px 156px;
 }
 .section-offer  .title {
     color: var(--primary-text-color);
@@ -118,6 +192,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 }
+
 
 .section-doing .section-title {
     color: var(--primary-text-color);
@@ -196,6 +271,13 @@ letter-spacing: 0.64px;
     color: var(--color-text-onesect);
     background: var(--active-text-color);
     text-align: center;
+}
+.footer .container {
+     {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
 }
 .section-portfolio .list .title {
     color: var(--primary-text-color);
