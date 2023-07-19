@@ -205,6 +205,8 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 .section-offer .list {
     display: flex;
     gap: 24px;
+}
+.section-offer .list .nav {
     flex-basis: calc((1128px - 72px) / 4);
 }
 .section-offer  .title {
