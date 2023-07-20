@@ -34,7 +34,7 @@ main {
 }
 .container {
     margin: 0 auto;
-    max-width: 1158px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -300,8 +300,10 @@ text-align: center;
 /*------------------------------------------FOOTER-------------------------*/
 
 .footer {
-    background-color: var(--backgroung-color-onesect);}
-    .footer .link {
+    background-color: var(--backgroung-color-onesect);
+    padding: 100px 0;
+}
+.footer .link {
     font-family: "Raleway", sans-serif;
     color: var(--color-logo);
     font-size: 18px;
@@ -313,7 +315,6 @@ text-decoration: none;
 margin-bottom: 16px;
 width: 115px;
 display: inline-block;
-padding: 100px 0;
 }
 .footer .container {
     box-sizing: content-box;
