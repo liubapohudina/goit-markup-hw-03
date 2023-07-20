@@ -32,7 +32,7 @@ img {
 main {
     flex-grow: 1;
 }
-.container{
+.container {
     margin: 0 auto;
     max-width: 1158px;
     padding-left: 15px;
@@ -72,11 +72,15 @@ header .container {
     header {
         border-bottom: 1px solid var(--cornflower, #E7E9FC);
     }
+  
     .nav .list {
         display: flex;
         gap: 40px;
         width: 261px;
         align-items: flex-start;
+        
+    }
+    .nav .list .link {
         padding: 24px 0;
     }
      .contacts  {
@@ -309,9 +313,9 @@ text-decoration: none;
 margin-bottom: 16px;
 width: 115px;
 display: inline-block;
+padding: 100px 0;
 }
 .footer .container {
-    padding: 100px 0;
     box-sizing: content-box;
     max-width: 264px;
     justify-content: flex-start;
@@ -371,7 +375,7 @@ padding: 12px 24px;
     display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
-    gap: 24px;
+    column-gap: 24px;
     flex-shrink: 0;
     
 }
