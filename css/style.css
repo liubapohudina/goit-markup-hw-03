@@ -14,6 +14,7 @@ body {
     --backgroung-color-onesect:  #2e2f42;
     --color-text-onesect:  #FFFFFF;
     --color-text-footer: #F4F4FD;
+    --cornflower: #E7E9FC;
 }
 h1, h2, h3, h4, h5, h6, p {
 	margin-top: 0;
@@ -137,6 +138,7 @@ header .container {
         font-family: var(--primary-font);
         color: var(--primary-color-slate);
         text-transform: none;
+        font-weight: 400;
         font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -225,7 +227,7 @@ letter-spacing: 0.02em;
 /*----------------------------------------SECTION DOING--------------------------*/
 
 .section-doing {
-    padding: 120px 156px;
+    padding: 120px;
 }
 .section-doing .section-title {
     color: var(--primary-text-color);
@@ -317,7 +319,7 @@ display: inline-block;
 .footer .container {
     box-sizing: content-box;
     max-width: 264px;
-    justify-content: flex-start;
+    padding-right: 1020px;
 }
 
 .footer .logo-studio-footer {
@@ -380,7 +382,7 @@ padding: 12px 24px;
 }
  .portfolio .card {
     border: 1px solid var(--cornflower, #E7E9FC);
-    padding: 32px 16px;
+    padding-left: 16px;
     border-top: none;
 }
 .section-portfolio .portfolio .item {
