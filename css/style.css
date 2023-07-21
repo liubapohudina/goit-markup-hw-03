@@ -382,7 +382,7 @@ padding: 12px 24px;
 }
  .portfolio .card {
     border: 1px solid var(--cornflower, #E7E9FC);
-    padding-left: 16px;
+    padding: 32px 16px;
     border-top: none;
 }
 .section-portfolio .portfolio .item {
@@ -397,7 +397,6 @@ padding: 12px 24px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em; 
-    margin-top: 32px;
     margin-bottom: 8px;
 }
 .section-portfolio .list .title-text {
@@ -407,5 +406,4 @@ padding: 12px 24px;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-margin-bottom: 32px;
 }
