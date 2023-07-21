@@ -227,7 +227,7 @@ letter-spacing: 0.02em;
 /*----------------------------------------SECTION DOING--------------------------*/
 
 .section-doing {
-    padding: 120px;
+    padding-bottom: 120px;
 }
 .section-doing .section-title {
     color: var(--primary-text-color);
@@ -302,6 +302,7 @@ text-align: center;
 .footer {
     background-color: var(--backgroung-color-onesect);
     padding: 100px 0;
+    
 }
 .footer .link {
     font-family: "Raleway", sans-serif;
@@ -318,8 +319,7 @@ display: inline-block;
 }
 .footer .container {
     box-sizing: content-box;
-    max-width: 264px;
-    padding-right: 1020px;
+    text-align: left;
 }
 
 .footer .logo-studio-footer {
